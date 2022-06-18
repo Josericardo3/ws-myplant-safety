@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrdersSystem</name>
+    </assembly>
+    <members>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Get(System.Int32)">
+             <summary>
+             Retorna los datos del Afiliado por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Afiliado/1
+            
+             </remarks>
+             <param name="Id">Identificador del Afiliado</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra un Afiliado por la Id</response>
+             <response code="200">Si encuentra un Afiliado por la Id</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Post(ejemplo.netcore.Models.AfiliadoModel)">
+            <summary>
+            Agregar Afiliados
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra un Afiliado por la Id</response>
+            <response code="200">Si se crea el Afiliado</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Put(System.Int32,ejemplo.netcore.Models.AfiliadoModel)">
+            <summary>
+            Actualizar Afiliados
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra un Afiliado por la Id</response>
+            <response code="200">Si se actualiza el Afiliado</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Delete(System.Int32)">
+            <summary>
+            Eliminar Afiliados
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra un Afiliado por la Id</response>
+            <response code="200">Si se elimina el Afiliado</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.Get">
+             <summary>
+             Retorna todos los temas de interés existentes
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Tema/1
+            
+             </remarks>
+             <returns></returns>
+             <response code="400">Si no se encuentra ningun tema</response>
+             <response code="200">Si encuentran los temas</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.Get(System.Int32)">
+             <summary>
+             Retorna los datos del Tema por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Tema/1
+            
+             </remarks>
+             <param name="Id">Identificador del Tema</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra un Tema por la Id</response>
+             <response code="200">Si encuentra un Tema por la Id</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.GetTemaxAfiliado(System.Int32)">
+             <summary>
+             Retorna los datos de los temas asociados a un afiliado
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Tema/tema_afiliado/1
+            
+             </remarks>
+             <param name="IdAfiliado">Identificador de Afiliado</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra ningún tema relacionado al afiliado</response>
+             <response code="200">Si encuentra un Tema por la Id del afiliado</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.GetTemasxUsuario(System.Int32)">
+             <summary>
+             Retorna los intereses asociados a un usuario
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Tema/tema_usuario/1
+            
+             </remarks>
+             <param name="IdUsuario">Identificador de Usuario</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra ningún tema relacionado al usuario</response>
+             <response code="200">Si encuentra un Tema por la Id del usuario</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.GetAfiliadoxTema(System.Int32)">
+             <summary>
+             Retorna la información de los afiliados a un Tema
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Tema/afiliado_tema/1
+            
+             </remarks>
+             <param name="IdTema">Identificador de Usuario</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra ningún afiliado relacionado al tema</response>
+             <response code="200">Si encuentra un Afiliado por la Id del Tema</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.Post(ejemplo.netcore.Models.TemaModel)">
+            <summary>
+            Agregar Temas
+            </summary>
+            <returns></returns>
+            <response code="500">Si no se encuentra un Tema por la Id</response>
+            <response code="200">Si se crea el Tema</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.PostUserxTema(System.Int32,System.Int32)">
+             <summary>
+             Asociar Usuarios a Temas de Interes
+             </summary>        
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 Tema/usuario_tema/1
+            
+             </remarks>
+             <response code="500">Si no se encuentra el id del usuario o tema ingresado</response>
+             <response code="200">Si se realiza correctamente la asociación</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.Put(System.Int32,ejemplo.netcore.Models.TemaModel)">
+            <summary>
+            Actualizar Temas
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra un Tema por la Id</response>
+            <response code="200">Si se actualiza el Tema</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.TemaController.Delete(System.Int32)">
+            <summary>
+            Eliminar Temas
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra un Tema por la Id</response>
+            <response code="200">Si se elimina el Tema</response>
+        </member>
+    </members>
+</doc>

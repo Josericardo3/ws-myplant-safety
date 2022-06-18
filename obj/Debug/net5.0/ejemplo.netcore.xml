@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ejemplo.netcore</name>
+    </assembly>
+    <members>
+        <member name="T:ejemplo.netcore.Controllers.CustomerController">
+             <summary>
+             Retorna los datos de las ordenes
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 customer/
+            
+             </remarks>
+             <param name="Id">Identificador del Orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentran ordenes</response>
+             <response code="200">Si encuentra ordenes</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.CustomerController.Get(System.String)">
+             <summary>
+             Retorna los datos de las ordenes por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 customer/1
+            
+             </remarks>
+             <param name="Id">Identificador de la orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra una orden por la Id</response>
+             <response code="200">Si encuentra una orden por la Id</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.CustomerController.Post(ejemplo.netcore.Entity.Customer)">
+            <summary>
+            Agregar Customers
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra la orden por la Id</response>
+            <response code="200">Si se crea la orden</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.CustomerController.Put(System.String,ejemplo.netcore.Entity.Customer)">
+            <summary>
+            Actualizar Customers
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se actualiza la orden</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.CustomerController.Delete(System.String)">
+            <summary>
+            Eliminar Customers
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se elimina la orden</response>
+        </member>
+        <member name="T:ejemplo.netcore.Controllers.OrderController">
+             <summary>
+             Retorna los datos de las ordenes
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Orders/
+            
+             </remarks>
+             <param name="Id">Identificador del Orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentran ordenes</response>
+             <response code="200">Si encuentra ordenes</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Get(System.Int32)">
+             <summary>
+             Retorna los datos de las ordenes por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Orders/1
+            
+             </remarks>
+             <param name="Id">Identificador de la orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra una orden por la Id</response>
+             <response code="200">Si encuentra una orden por la Id</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Post(ejemplo.netcore.Entity.Order)">
+            <summary>
+            Agregar Orders
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra la orden por la Id</response>
+            <response code="200">Si se crea la orden</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Put(System.Int32,ejemplo.netcore.Entity.Order)">
+            <summary>
+            Actualizar Orders
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se actualiza la orden</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderController.Delete(System.Int32)">
+            <summary>
+            Eliminar Orders
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se elimina la orden</response>
+        </member>
+        <member name="T:ejemplo.netcore.Controllers.OrderDetailController">
+             <summary>
+             Retorna los datos de las ordenes
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 orderDetail/
+            
+             </remarks>
+             <param name="Id">Identificador del Orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentran ordenes</response>
+             <response code="200">Si encuentra ordenes</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderDetailController.Get(System.Int32)">
+             <summary>
+             Retorna los datos de las ordenes por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 Orders/1
+            
+             </remarks>
+             <param name="Id">Identificador de la orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentran los detalles de la  orden por la Id de la orden</response>
+             <response code="200">Si encuentra los detalles de la orden por la Id de la orden</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderDetailController.Post(ejemplo.netcore.Entity.OrderDetail)">
+            <summary>
+            Agregar OrderDetail
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra la orden por la Id</response>
+            <response code="200">Si se crea los detalles de la orden</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderDetailController.Put(System.Int32,ejemplo.netcore.Entity.OrderDetail)">
+            <summary>
+            Actualizar OrderDetail
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id de la orden</response>
+            <response code="200">Si se actualizan los detalles de la orden</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.OrderDetailController.Delete(System.Int32)">
+            <summary>
+            Eliminar OrderDetail
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id de la orden</response>
+            <response code="200">Si se elimina los detalles de la orden</response>
+        </member>
+        <member name="T:ejemplo.netcore.Controllers.ProductController">
+             <summary>
+             Retorna los datos de las ordenes
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 product/
+            
+             </remarks>
+             <param name="Id">Identificador del Orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentran ordenes</response>
+             <response code="200">Si encuentra ordenes</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.ProductController.Get(System.Int32)">
+             <summary>
+             Retorna los datos de las ordenes por Id
+             </summary>        
+             <remarks>
+             Sample request:
+            
+                 product/1
+            
+             </remarks>
+             <param name="Id">Identificador de la orden</param>
+             <returns></returns>
+             <response code="400">Si no se encuentra una orden por la Id</response>
+             <response code="200">Si encuentra una orden por la Id</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.ProductController.Post(ejemplo.netcore.Entity.Product)">
+            <summary>
+            Agregar products
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra la orden por la Id</response>
+            <response code="200">Si se crea la orden</response>        
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.ProductController.Put(System.Int32,ejemplo.netcore.Entity.Product)">
+            <summary>
+            Actualizar products
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se actualiza la orden</response>
+        </member>
+        <member name="M:ejemplo.netcore.Controllers.ProductController.Delete(System.Int32)">
+            <summary>
+            Eliminar products
+            </summary>        
+            <returns></returns>
+            <response code="500">Si no se encuentra una orden por la Id</response>
+            <response code="200">Si se elimina la orden</response>
+        </member>
+    </members>
+</doc>
